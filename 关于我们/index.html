@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			.banner1{
+				width: 100%;
+				height: 60px;
+				background-color: black;
+			}
+			.banner1 .tu{
+				margin-top: 10px;
+	            margin-left: 40px;
+	            float: left;
+			}
+			.banner1 .tu a{
+				text-decoration: none;
+				color: white;
+			}
+			.banner1 .nav1 a{
+				width: 90px;
+				height: 60px;
+				text-align: center;
+				margin-left: 15px;
+				margin-right: 15px;
+				font-style: normal;
+				line-height: 60px;
+				float: left;
+				color: white;
+				text-decoration:none; 
+			}
+			.banner1 .nav1{
+				width: 0 auto;
+				height: 60px;
+				background-color: black;
+				float: right;
+			}
+			.banner1 .nav1 a:hover{
+				display: block;
+	            background-color: #333;
+            }
+            .zhong{
+            	width: 100%;
+            	height: 2400px;
+            	margin: 0 auto;
+            }
+            #pt{
+            	width: 100%;
+            	height: 350px;
+            	background-size: 100% 100%;
+            	margin-top: -10px;
+            }
+            .text{
+            	width: 40%;
+            	height: 30%;
+            	color: white;
+            	margin: 0 auto;
+            	padding-top: 100px;
+            }
+            .banner2 .nav2{
+            	width: 100%;
+				height: 60px;
+				background-color: white;
+            }
+            .banner2 .nav_1{
+            	width: 500px;
+            	height: 60px;
+            }
+            .banner2 .nav2 a{
+            	width: 80px;
+				height: 60px;		
+            	line-height: 60px;
+            	margin-left: 60px;
+            	color: black;
+            	float: left;
+            	text-decoration:none; 
+            }
+            .banner2 .nav2 a:hover{  
+            	background-color: black;
+            	opacity: 0.5;
+            	color: white;
+            }
+            .child1{
+            	margin-top: 50px;
+            }
+            .dabox{
+            	margin: 0 auto;
+            	margin-top: 80px;
+            	width: 100%;
+            }
+            #left{
+            	width:400px;
+            	height:300px;
+            	margin-left: 40px;
+            	float: left;
+            	margin-top: 10px;
+            }
+           #center{
+            	width: 350px;
+            	height: 350px;
+            	border-radius: 200px;
+            	background-size: 100%;
+            	float:left;   
+				transform: rotate(0deg);
+				transition: all 3s;	
+				margin-left:50px;
+            }
+            #center:hover{
+				transform: rotate(360deg);
+			}
+            #right{
+            	width: 400px;
+            	height:300px;
+            	float: right;
+                margin-right: 70px;     
+                margin-top: 10px;
+            }
+            .power{
+            	margin-left: 540px;
+            	margin-right: 540px;
+            	text-align: center;
+            	line-height: 100px;
+            }
+            .one{
+            	width: 280px;
+				height: 240px;
+				background-image: url(img/信息查询图.png);
+				background-size: 100% 100%;
+				color: white;
+				line-height:450px ;
+				transition: all 2s; 
+				margin-left: 60px;
+            }
+            .one:hover{
+				transform: translate(-50px);
+				line-height: 240px;
+			}
+            .two{
+            	width: 280px;
+				height: 240px;
+				background-image: url(img/生活服务图.png);
+				background-size: 100% 100%;
+				transition: all 2s; 
+				margin-left: 380px;
+				margin-top: -240px;
+				color: white;
+				line-height: 450px;
+            }
+            .two:hover{
+            	transform: rotate(-360deg);
+            }
+            .three{
+            	width: 280px;
+				height: 240px;
+			    background-image: url(img/b5.jpg);
+			    margin-left: 700px;
+			    margin-top: -240px;
+			    color: white;
+			    line-height: 450px;
+			    transition: all 2s; 
+            }
+            .three:hover{
+            	line-height: 240px;
+            	transform: translate(50px);
+            }
+            .four{
+            	width: 280px;
+            	height: 240px;
+            	background-image: url(img/情感交流图.png);
+            	background-size: 100% 100%;
+            	margin-left: 1020px;
+			    margin-top: -240px;
+			    color: white;
+			    line-height: 450px;
+			    transition: all 2s; 
+            }
+            .four:hover{
+            	transform: rotate(360deg);
+            }
+            .pt2{
+            	width: 100%;
+            	height: 250px;
+            	background-image: url(img/无处不在.png);
+            	background-size: 100% 100%;
+            	float: left;
+            	margin-top:100px;	
+            }
+            .text2{
+            	width: 40%;
+            	height: 30%;
+            	color: white;
+            	margin: 0 auto;
+            	padding-top: -150px;
+            }
+			.child2{
+				margin-top: 400px;
+			
+			}
+			.child2 img{
+				width: 120px;
+				height: 120px;
+				margin-left: 70px;
+				margin-right: 20px;
+			}
+			.timu p{
+				align-content: center;
+				margin-left: 82px;
+				float: left;
+				margin-right: 100px;
+			}
+			.kou p{
+				margin-top: 40px;
+			}
+			.di{
+				width: 100%;
+				height: 250px;
+				background-color: black;
+			}
+			.di img{
+				width: 88px;
+				height: 94px;
+				margin-left: 40px;
+				margin-top: 40px;
+			}
+			.di .we{
+				font-size: 19px;
+				color: gainsboro;
+				margin-left: 1000px;
+				margin-top: -85px;	
+			}
+			.we span{
+				margin-left: 95px;
+			}
+			.weixin img{
+				width: 50px;
+				height: 45px;
+				margin-top: 20px;
+				margin-right: 155px;
+				float: right;
+			}
+			.weibo img{
+				width: 45px;
+				height: 45px;
+				margin-right: -20px;
+				margin-top: 20px;
+				float: right;
+			}
+			#sao{
+				width: 150px;
+				height: 150px;
+				background-image: url(img/二维码.png);
+				background-size: 100% 100%;
+				position: absolute;
+				right: 100px;
+				margin-top:-150px ;
+				display: none;
+			}
+			.wei p{
+				color: gainsboro;
+				margin-left: 40px;
+				margin-top: 130px;
+				opacity: 0.4;
+			}
+		</style>
+		<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				pic();
+				wen();
+				var aWx=document.getElementsByClassName("weixin")[0];
+				var oSao=document.getElementById("sao");
+				aWx.onclick=function(){
+					oSao.style.display="block";
+				}
+				aWx.onmouseout=function(){
+					oSao.style.display="none";
+				}
+			}	
+		</script>
+	</head> 
+	<body>
+		<div class="zhong">
+		<div class="banner1">
+			<div class="tu">		
+				<img src="img/LOGO.png"  height="40"/>
+			</div>
+			<div class="nav1">
+			    <a href="../首页/home.html">首页</a>
+			    <a href="../简介/JaxOS简介.html">AJAX简介</a>
+			    <a href="../解决方案/index.html">解决方案</a>
+			    <a href="../开放平台/开放平台.html">开发平台</a>
+			    <a href="../新闻动态/新闻动态第一页.html">新闻动态</a>
+			    <a href="#">关于我们</a>
+			</div>
+		</div>
+
+		<div id="pt" class="ajax_pic">
+		<div class="text">
+			<center><h1>我们是谁</h1></center>
+            <p class="ajax_txt"></p>
+		</div>
+		</div>
+		<div class="banner2">
+		<div class="nav2">
+			<div class="nav_1">
+				<a href="#">我们是谁</a>
+			    <a href="联系我们.html">联系我们</a>
+			</div>
+		</div>	
+		<div class="child1">
+			<center><h1>我们的成长</h1></center>
+		</div>
+		<div class="dabox">
+			<div id="left">
+				<img src="" class="ajax_pic" />								
+					<p class="ajax_txt"></p>
+			    	<br />
+			    	<img src="" class="ajax_pic"/>
+					<p class="ajax_txt"></p>
+			</div>	
+		<div id="center" class="ajax_pic"></div>	
+		<div id="right" >
+				<img src="" class="ajax_pic"/>				
+					<p class="ajax_txt"></p>
+					<br />
+					<img src="" class="ajax_pic"/>
+					<p class="ajax_txt"></p>	
+			</div>
+		</div>
+		<div class="power">
+			   <h1>我们的能力</h1>
+		</div>
+		<div class="one">信息查询</div>
+		<div class="two">生活服务</div>
+		<div class="three">日程管理</div>
+		<div class="four">情感交流</div>
+		<div class="pt2">
+		<div class="text2">
+			<center><h1>无处不在</h1></center>
+			<p class="ajax_txt"></p>
+		</div>
+		</div>
+		<div class="child2">
+			<center><h1>适用的设备</h1></center>
+			<hr align="center" size="1" width="90%" color="gainsboro" />
+			<img src="img/可穿戴.png" />
+			<img src="img/冰箱.png" />
+			<img src="img/机器人.png" />
+			<img src="img/电视.png" />
+			<img src="img/车载.png" />
+			<img src="img/音箱.png" />
+		</div>
+		<div class="timu">
+			<p>可穿戴</p>
+			<p>冰箱</p>
+			<p>机器人</p>
+			<p>电视</p>
+			<p>车载</p>
+			<p>&nbsp;&nbsp;&nbsp;音箱</p>
+			<hr align="center" size="1" width="90%" color="gainsboro" />
+		</div>
+		<div class="kou">
+		<p><center><font size="3" face="宋体" color="darkgray">没错，我们就是AJAX，帮您实现“懒惰”的生活。</font></center></p>
+		</div>
+		<br /><br /><br /><br />
+		<div class="di">
+			<img src="img/LOGO.png" />
+		<div class="we">
+			<span>关注我们</span>
+		</div>	
+		<div id="sao"></div>
+		<div class="weixin">
+		    <img src="img/weixin.png" />
+	  </div>
+		<div class="weibo">
+			<img src="img/weibo1.png" />
+		</div>
+		<div class="wei">
+			<p>Jax团队出品</p>
+		</div>
+		</div>
+	</body>
+</html>

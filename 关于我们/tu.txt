@@ -1,0 +1,6 @@
+[{"pic":"img/我们是谁.png"},
+ {"pic":"img/FIRST.png"},
+  {"pic":"img/SECOND.png"},
+ {"pic":"img/多边图.png"},
+ {"pic":"img/THIRD.png"},
+ {"pic":"img/TODAY.png"},];

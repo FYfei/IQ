@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				padding: 0;
+				margin: 0;
+			}
+			.banner{
+				width: 100%;
+				height: 70px;
+				background-color: black;
+			}
+			.banner .tu{
+				width: 59px;
+				margin-left: 40px;
+				float: left;
+				margin-right: 400px;
+			}
+			.banner .tu img{
+				margin-top: 10px;
+			}
+			.banner .nav1 a{
+				width: 90px;
+				height: 60px;
+				text-align: center;
+				margin-left: 15px;
+				margin-right: 15px;
+				font-style: normal;
+				line-height: 60px;
+				float: left;
+				color: white;
+				text-decoration:none; 
+			}
+			.banner .nav1{
+				width: 0 auto;
+				height: 60px;
+				background-color: black;
+				float: right;
+			}
+			.banner .nav1 a:hover{
+				display: block;
+	            background-color: #333;
+            }
+            .jian{
+            	width: 100%;
+            	height: 300px;
+            	background-image: url(img/未标题-2.jpg);
+            	background-size: 100% 100%;
+            	margin-top: -32px;
+            }
+            .zi p{
+            	font-family: "黑体";
+            	position: absolute;
+                top: 200px; 
+                left: 730px;           	
+            }
+            .tu1{
+            	width: 1000px;
+            	height: 330px;
+            	margin-top: 20px;
+            	border-radius: 20px 20px 20px 20px;
+            	position: relative;
+            	border: 1px coral solid;
+            	box-shadow: 10px 10px 5px coral;
+            	overflow: hidden;
+            }
+            .tu1 img{
+            	width: 230px;
+            	height: 300px;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-left: 50px;
+            	margin-top: 15px;
+            	float: left;
+            }
+            .tu1 .jie1{
+            	width: 400px;
+            	height: 100px;
+            	font-size: 16px;
+            	position: absolute;
+            	left: 1010px;
+            }
+            .tu1 .jie1 p{
+            	margin-top: 10px;	
+            }
+            .tu2{
+            	width: 1000px;
+            	height: 330px;
+            	border: 1px darkgray solid;
+            	margin-top: 40px;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-left: 200px;
+            	box-shadow: -10px 10px 5px darkgray;
+            	position: relative;
+            	overflow: hidden;
+            }
+            .center{
+            	width: 1200px;
+            	height: 3000px;
+            	margin: 0 auto;
+            }
+            .tu2 img{
+            	width: 230px;
+            	height: 300px;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-left: 720px;
+            	margin-top: 15px;   	
+            }
+            .tu2 .jie2{
+            	width: 500px;
+            	height:300px;
+            	position: absolute;
+            	top: 40px;
+            	left: -500px;
+            	font-size: 16px;
+            }
+            .tu3{
+            	width: 1000px;
+            	height: 330px;
+            	border: 1px pink solid;
+            	margin-top: 40px;
+            	border-radius: 20px 20px 20px 20px;
+            	box-shadow: 10px 10px 5px pink; 
+            	position: relative;
+            	overflow: hidden; 
+            }
+            .tu3 img{
+            	width: 230px;
+            	height: 300px;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-left: 50px;
+            	margin-top: 15px;
+            	float: left;
+            }
+            .tu3 .jie3{
+            	width: 450px;
+            	height: 300px;
+            	font-size: 16px;
+            	position: absolute;
+            	left: 1000px;
+            	top: 50px;
+            }
+            .tu4{
+            	width: 1000px;
+            	height: 330px;
+            	border: 1px solid powderblue;
+            	border-radius: 20px 20px 20px 20px;
+            	box-shadow: -10px 10px 5px powderblue;
+            	margin-left: 200px;
+            	margin-top: 40px;
+            	position: relative;
+                overflow: hidden;
+            }
+            .tu4 img{
+            	width: 230px;
+            	height: 300px;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-left: 720px;
+            	margin-top: 15px;
+            }
+            .tu4 .jie4{
+            	width: 480px;
+            	height: 250px;
+            	font-size: 16px;
+            	position: absolute;
+            	left: -460px;
+            	top: 60px;	
+            }
+            .tu5{
+            	width: 1000px;
+            	height: 330px;
+            	border: 1px solid plum;
+            	box-shadow: 10px 10px 5px plum;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-top: 40px;
+            	position: relative;
+            	overflow: hidden;
+            }
+            .tu5 img{
+            	width: 230px;
+            	height: 300px;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-left: 40px;
+            	margin-top: 20px;
+            }
+            .tu5 .jie5{
+            	width: 450px;
+            	height: 250px;
+            	font-size: 16px;
+            	position: absolute;
+            	left: 1000px;
+            	top: 50px;
+            }
+            .tu6{
+            	width: 1000px;
+            	height: 330px;
+            	border: 1px solid darkseagreen;
+            	box-shadow: -10px 10px 5px darkseagreen;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-top: 40px;
+            	margin-left: 200px;
+            	position: relative;
+            	overflow: hidden;
+            }
+            .tu6 img{
+            	width: 230px;
+            	height: 300px;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-left: 720px;
+            	margin-top: 10px;
+            }
+            .tu6 .jie6{
+            	width: 430px;
+            	height: 200px;
+            	font-size: 16px;
+            	position: absolute;
+            	left: -340px;
+            	top: 50px;
+            }
+            .tu7{
+            	width: 1000px;
+            	height: 330px;
+            	border: 1px solid khaki;
+            	box-shadow: 10px 10px 5px khaki;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-top: 40px;
+            	position: relative;
+            	overflow: hidden;
+            }
+            .tu7 img{
+            	width: 230px;
+            	height: 300px;
+            	border-radius: 20px 20px 20px 20px;
+            	margin-left: 40px;
+            	margin-top: 10px;
+            }
+            .tu7 .jie7{
+            	width: 450px;
+            	height: 250px;
+            	position: absolute;
+            	left: 1000px;
+            	top: 40px;  	
+            }
+            .tu8{
+            	width: 1000px;
+            	height: 330px;
+            	border: 1px solid royalblue;
+            	border-radius: 20px 20px 20px 20px;
+            	box-shadow: -10px 10px 5px royalblue;
+            	margin-top: 40px;
+            	margin-left: 200px;
+            	overflow: hidden;
+            	position: relative;
+            }
+            .tu8 img{
+            	width: 230px;
+            	height: 300px;
+            	margin-left: 720px;
+            	margin-top: 10px;
+            	border-radius: 20px 20px 20px 20px;
+            }
+            .tu8 .jie8{
+            	width: 450px;
+            	height: 250px;
+            	position: absolute;
+            	left: -430px;
+            	top: 50px;
+            }
+            .kou p{
+				margin-top: 40px;
+			}
+			.di{
+				width: 100%;
+				height: 250px;
+				background-color: black;
+			}
+			.di img{
+				width: 88px;
+				height: 94px;
+				margin-left: 40px;
+				margin-top: 40px;
+			}
+			.di .we{
+				font-size: 19px;
+				color: gainsboro;
+				margin-left: 1100px;
+				margin-top: -85px;
+			}
+			.weixin img{
+				width: 50px;
+				height: 45px;
+				margin-top: 20px;
+				margin-right: 155px;
+				float: right;
+			}
+			.weibo img{
+				width: 45px;
+				height: 45px;
+				margin-right: -20px;
+				margin-top: 20px;
+				float: right;
+			}
+			#sao{
+				width: 150px;
+				height: 150px;
+				background-image: url(img/二维码.png);
+				background-size: 100% 100%;
+				position: absolute;
+				right: 100px;
+				margin-top:-150px ;
+				display: none;
+			}
+			.wei p{
+				color: gainsboro;
+				margin-left: 40px;
+				margin-top: 130px;
+				opacity: 0.4;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+			var aTu=document.getElementsByClassName("tu1")[0];
+			var aJie = document.getElementsByClassName('jie1')[0];
+			var timer = 0;
+			aTu.onmouseover=function(){
+				clearInterval(timer);
+				timer=setInterval(function(){
+					if(aJie.offsetLeft<450){
+						clearInterval(timer);
+					}
+					else{
+						aJie.style.left=aJie.offsetLeft-5+"px";
+					}
+				},30)
+			}
+			var aTu2=document.getElementsByClassName("tu2")[0];
+			var aJie2=document.getElementsByClassName("jie2")[0];
+			var timer1 = 0;
+			aTu2.onmouseover=function(){
+				clearInterval(timer1);
+				timer1=setInterval(function(){
+					if(aJie2.offsetLeft>250){
+						clearInterval(timer1);
+					}
+					else{
+						aJie2.style.left=aJie2.offsetLeft+5+"px";
+					}
+				},30)
+			}
+			var aTu3=document.getElementsByClassName("tu3")[0];
+			var aJie3=document.getElementsByClassName("jie3")[0];
+			var timer2 = 0;
+			aTu3.onmouseover=function(){
+				clearInterval(timer2);
+				timer2=setInterval(function(){
+					if(aJie3.offsetLeft<450){
+						clearInterval(timer2);
+					}
+					else{
+						aJie3.style.left=aJie3.offsetLeft-5+"px";
+					}
+				},30)
+			}
+			var aTu4=document.getElementsByClassName("tu4")[0];
+			var aJie4=document.getElementsByClassName("jie4")[0];
+			var timer3 = 0;
+			aTu4.onmouseover=function(){
+				clearInterval(timer3);
+				timer3=setInterval(function(){
+					if(aJie4.offsetLeft>230){
+						clearInterval(timer3);
+					}
+					else{
+						aJie4.style.left=aJie4.offsetLeft+5+"px";
+					}
+				},30)
+			}
+			var aTu5=document.getElementsByClassName("tu5")[0];
+			var aJie5=document.getElementsByClassName("jie5")[0];
+			var timer4 = 0;
+			aTu5.onmouseover=function(){
+				clearInterval(timer4);
+				timer4=setInterval(function(){
+					if(aJie5.offsetLeft<450){
+						clearInterval(timer4);
+					}
+					else{
+						aJie5.style.left=aJie5.offsetLeft-5+"px";
+					}
+				},30)
+			}
+			var aTu6=document.getElementsByClassName("tu6")[0];
+			var aJie6=document.getElementsByClassName("jie6")[0];
+			var timer5 = 0;
+			aTu6.onmouseover=function(){
+				clearInterval(timer5);
+				timer5=setInterval(function(){
+					if(aJie6.offsetLeft>240){
+						clearInterval(timer5);
+					}
+					else{
+						aJie6.style.left=aJie6.offsetLeft+5+"px";
+					}
+				},30)
+			}
+			var aTu7=document.getElementsByClassName("tu7")[0];
+			var aJie7=document.getElementsByClassName("jie7")[0];
+			var timer6=0;
+			aTu7.onmouseover=function(){
+				clearInterval(timer6);
+				timer6=setInterval(function(){
+					if(aJie7.offsetLeft<450){
+						clearInterval(timer6);
+					}
+					else{
+						aJie7.style.left=aJie7.offsetLeft-5+"px";
+					}
+				},30)	
+			}
+			var aTu8=document.getElementsByClassName("tu8")[0];
+			var aJie8=document.getElementsByClassName("jie8")[0];
+			var timer7 = 0;
+			aTu8.onmouseover=function(){
+				clearInterval(timer7);
+				timer8=setInterval(function(){
+					if(aJie8.offsetLeft>250){
+						clearInterval(timer7);
+					}
+					else{
+						aJie8.style.left=aJie8.offsetLeft+5+"px";
+					}
+				},30)
+			}
+			var aWx=document.getElementsByClassName("weixin")[0];
+			var oSao=document.getElementById("sao");
+				aWx.onclick=function(){
+					oSao.style.display="block";
+				}
+				aWx.onmouseout=function(){
+					oSao.style.display="none";
+				}
+		}
+		</script>
+	</head>
+	<body>
+		<div class="banner">
+			<div class="tu">
+				<img src="img/LOGO.png" width="59" height="50" />
+			</div>
+		<div class="nav1">
+			    <a href="../首页/home.html">首页</a>
+			    <a href="../简介/JaxOS简介.html">AJAX简介</a>
+			    <a href="../解决方案/index.html">解决方案</a>
+			    <a href="../开放平台/开放平台.html">开发平台</a>
+			    <a href="../新闻动态/新闻动态第一页.html">新闻动态</a>
+			    <a href="#">关于我们</a>
+			</div>
+		</div>
+		
+		<div class="jian">
+			<div class="zi">
+			<h1><p>团队成员简介</p></h1>
+			</div>
+		</div>
+		
+		<div class="center">
+			
+		<div class="tu1">
+			<img src="img/lpl.jpg" />
+		<div class="jie1">
+			<br /><br />
+			<p>姓名：刘鹏</p>	
+			<p>性别：男</p>
+			<p>来自：福建</p>
+			<p>爱好：敲代码，和龙哥一起逛公园</p>
+			<p>个性签名：将来的你一定会感谢现在奋斗的你。</p>
+		</div>	
+		</div>
+		<div class="tu2">
+			<img src="img/long2.jpg" />
+		<div class="jie2">
+			<p>姓名：崔艳龙</p>
+			<p>性别：男</p>
+			<p>来自：河北承德</p>
+			<p>爱好：打篮球，健身，逛公园</p>
+			<p>个性签名：每个胖子都是潜力股，且吃且珍惜。</p>
+		</div>
+		</div>
+		<div class="tu3">
+			<img src="img/jiang.jpg" />
+		<div class="jie3">
+			<p>姓名：姜倩</p>
+			<p>性别：女</p>
+			<p>来自：山西长治</p>
+			<p>爱好：听音乐，旅游，收集电影票</p>
+			<p>个性签名：知世故而不世故才是最善良的成熟。</p>
+		</div>
+		</div>
+		<div class="tu4">
+			<img src="img/wei.jpg" />
+		<div class="jie4">
+			<p>姓名：魏佳斌</p>
+			<p>性别：男</p>
+			<p>来自：甘肃兰州</p>
+			<p>爱好：讲故事，看电影</p>
+			<p>个性签名：做最好的今天，回顾最好的昨天，迎接最美好的明天。</p>
+		</div>
+		</div>
+		<div class="tu5">
+			<img src="img/yu.jpg" />
+		<div class="jie5">
+			<p>姓名：娄宇彤</p>
+			<p>性别：女</p>
+			<p>来自：吉林敦化</p>
+			<p>爱好：听歌，阅读，看电影</p>
+			<p>个性签名：认真对待任何人和事，但不较真。</p>	
+		</div>
+		</div>
+		<div class="tu6">
+			<img src="img/wang.jpg" />
+		<div class="jie6">
+			<p>姓名：王建良</p>
+			<p>性别：男</p>
+			<p>来自：山西朔州</p>
+			<p>爱好：桌球，游泳，打游戏</p>
+			<p>个性签名：世界会向那些有目标和远见的人让路。</p>
+			</div>
+		</div>
+		<div class="tu7">
+			<img src="img/fei.jpg" />
+		<div class="jie7">
+			<p>姓名：杨飞</p>
+			<p>性别：女</p>
+			<p>来自：贵州</p>
+			<p>爱好：追剧,跑步</p>
+			<p>个性签名：用微笑演绎悲伤，用努力诠释未来。</p>	
+			</div>
+		</div>
+		<div class="tu8">
+			<img src="img/cai.jpg" />
+			<div class="jie8">
+				<p>姓名：蔡子文</p>
+				<p>性别：男</p>
+			    <p>来自：河北张家口</p>
+			    <p>爱好：桌球，游泳，打游戏</p>
+			    <p>个性签名：你没有资格说放弃，活的精彩不只是为了你自己。</p>
+			</div>
+		</div>
+		</div>
+		<div class="kou">
+		<p><center><font size="3" face="宋体" color="darkgray">一个专业的团队，成就您一个完美的人生，没错，我们就是JAX，帮您实现“懒惰”的生活。</font></center></p>
+		</div>
+		<br /><br /><br /><br />
+		
+		<div class="di">
+			<img src="img/LOGO.png" />
+		<div class="we">
+			<span>关注我们</span>
+		</div>	
+		<div id="sao"></div>
+		<div class="weixin">
+		    <img src="img/weixin.png" />
+	  </div>
+		<div class="weibo">
+			<img src="img/weibo1.png" />
+		</div>
+		<div class="wei">
+			<p>Jax团队出品</p>
+		</div>
+
+	</body>
+</html>
