@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background-color: aliceblue;
+			}
+			table{
+				margin: auto;
+				text-align: center;
+				width: 600px;
+				height: 100px;
+			}
+			div{
+				margin: auto;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			window.onload=function(){
+				
+				var oBtn = document.getElementById("btn1");
+				
+				
+				oBtn.onclick=function(){
+					alert("修改成功");
+				}
+			}
+					
+					
+					
+					
+					
+		</script>
+	</head>
+	<body>
+		
+		<h1 align="center">修改会员信息</h1>
+		<div align="center">
+			姓名：<input type="text" id="txt1" />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别：<input type="text" id="txt2" /><br /><br />
+			年龄：<input type="text" id="txt3"/>
+			会员等级：<input type="text" id="txt5"/><br /><br />
+			<input type="button" value="确定修改" id="btn1" /><br /><br />
+			<a href="middle1.html"><input type="button" value="返回首页" /></a>
+		</div>
+</html>

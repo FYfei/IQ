@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				width: 1350px;
+				height: 646px;
+				background-image: url(../img/201703.jpg);
+				background-repeat: no-repeat;
+			}
+			#tex1{
+				margin-top: 250px;
+			}
+			#tex2{
+				margin-top: 20px;
+			}
+			#btn1{
+				margin-left: 650px;
+			}
+		</style>
+		<script type="text/javascript" src="ajax.js" ></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oBtn = document.getElementById("btn1");
+				var oDiv = document.getElementById("div1");
+				var oTxt = document.getElementById("tex1");
+				var oTxt2 = document.getElementById("tex2");
+				
+				
+				oBtn.onclick=function(){
+					ajax("ajax1.txt",function(str){
+						
+						if(String(oTxt.value)===str){
+							
+							ajax("pasword.txt",function(str){
+								
+								if(String(oTxt2.value)===str){
+									
+									alert("登录成功");
+									window.location.href="manage.html";
+								}
+								else{
+									alert("密码错误");
+								}
+								});
+						}
+						else{
+							alert("用户名或密码错误");
+						}
+							
+							
+						
+					});
+				}
+				
+			
+			
+		
+			
+				/*var oBtn1 = document.getElementById("btn1");
+				var oBtn2 = document.getElementById("btn2");
+				
+				oBtn1.onclick=function(){
+					ajax("aaa.txt",function(str){
+						oDiv.innerHTML = str;
+					},function(){
+						oDiv.innerHTML = "获取失败";
+					});
+				}*/
+				
+				
+			
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+		<center><strong>用户名：</strong><input type="text" id="tex1"/><br /></center>
+		<center><strong>密&nbsp;&nbsp;&nbsp;码：</strong><input type="password" id="tex2" /><br /><br /></center>
+	    <input type="button" id="btn1" value="登录"/ >
+	    <input type="button" id="btn2" value="注册"/ >
+		</div>
+		
+	</body>
+</html>
